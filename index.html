@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to My Interactive Page 🚀</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="themeToggle">Toggle Light/Dark Mode</button>
+
+  <!-- Counter Game -->
+  <div class="counter-section">
+    <p>Counter: <span id="counter">0</span></p>
+    <button id="incrementBtn">Increment</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <!-- Collapsible FAQ -->
+  <div class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is JavaScript?</button>
+      <div class="faq-answer">JavaScript is a programming language used to make web pages interactive.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Why use event listeners?</button>
+      <div class="faq-answer">They allow you to respond to user actions like clicks and key presses.</div>
+    </div>
+  </div>
+
+  <!-- Form Section -->
+  <form id="signupForm">
+    <h2>Sign Up</h2>
+    <label>Name: <input type="text" id="name" /></label>
+    <span class="error" id="nameError"></span><br />
+
+    <label>Email: <input type="email" id="email" /></label>
+    <span class="error" id="emailError"></span><br />
+
+    <label>Password: <input type="password" id="password" /></label>
+    <span class="error" id="passwordError"></span><br />
+
+    <button type="submit">Submit</button>
+    <p id="formSuccess"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
